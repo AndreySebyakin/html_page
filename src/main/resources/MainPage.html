@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>TV Dashboard</title>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Free TV Dashboard">
+    <meta name="author" content="Andrey Sebyakin">
+
+    <link rel="stylesheet" href=styles/body-styles.css>
+    <link rel="stylesheet" href=styles/footer-style.css>
+    <link rel="stylesheet" href=styles/header-style.css>
+    <link rel="stylesheet" href=styles/select-style.css>
+    <link rel="stylesheet" href=styles/bottons-style.css>
+    <script type="text/javascript" src="js/my-script.js"></script>
+</head>
+
+
+<body>
+
+<!-- Header -->
+<div class="header">
+    <h1>TV Dashboard</h1>
+    <p>Please select county, report type and period. </p>
+</div>
+
+<!-- Menu -->
+<div class="navbar">
+    <a href="#home">Home</a>
+    <div class="dropdown">
+        <button class="dropbtn">Select country
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="#">All</a>
+            <a href="#">Belarus</a>
+            <a href="#">Kazahstan</a>
+            <a href="#">Azerbajan</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Type of report
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="#">SOV</a>
+            <a href="#">Weekly</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Type of GRP
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="#">GRP</a>
+            <a href="#">GRP 30"</a>
+        </div>
+    </div>
+</div>
+
+<!-- Main window -->
+<div class="row">
+    <div class="leftcolumn">
+        <div class="card">
+            <h4>Select the parameters for the report</h4>
+            <div class="custom-select" style="width:200px;">
+                <select>
+                    <option value="0">Select Categories:</option>
+                    <option value="1">Gum</option>
+                    <option value="2">Choco</option>
+                    <option value="3">Pet Food</option>
+                </select>
+            </div>
+            <div class="custom-select" style="width:200px;">
+                <select>
+                    <option value="0">Select Advertisers:</option>
+                    <option value="1">Mars</option>
+                    <option value="2">Nestle</option>
+                    <option value="3">Mondelez</option>
+                    <option value="4">Perfetti</option>
+                </select>
+            </div>
+            <div class="custom-select" style="width:200px;">
+                <select>
+                    <option value="0">Select Brands:</option>
+                    <option value="1">Twix</option>
+                    <option value="2">Orbit</option>
+                    <option value="3">Dirol</option>
+                    <option value="4">Whiskas</option>
+                    <option value="5">Felix</option>
+                    <option value="6">Snickers</option>
+                </select>
+            </div>
+            <div class="custom-select" style="width:200px;">
+                <select>
+                    <option value="0">Select Target Audience:</option>
+                    <option value="1">All 18+</option>
+                    <option value="2">All 15-35</option>
+                    <option value="3">All 15+</option>
+                    <option value="4">Female 20+</option>
+                </select>
+            </div>
+            <div class="btn-group">
+                <button onclick="createExl()" class="button">Export to EXL</button>
+                <button onclick="createPpt()" class="button">Export to PPT</button>
+                <button onclick="calculate()" class="button">Calculate</button>
+                <button onclick="cleanFilters()" class="button">Clean filters</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>TV data</h2>
+            <img class="graph" src="/pictures/Grafs.jpg" alt="Graphs must be here">
+            <p>Total GRPs: FY 2021 - XXX; Q1 2021 - XXX; Q1 2022 - XXX; TRP index - XX%.</p>
+        </div>
+    </div>
+
+    <div class="rightcolumn">
+        <div class="card">
+            <h3>Client: Mars.</h3>
+            <a href="https://rus.mars.com/">
+            <img class="logo" src="/pictures/Mars.png" alt="Client logo">
+            </a>
+        </div>
+        <div class="card">
+            <h3>Table keys</h3>
+            <p>color1 - data in table</p>
+            <p>color2 - data in table</p>
+            <p>color3 - data in table</p>
+            <p>color4 - data in table</p>
+            <p>color5 - data in table</p>
+            <p>color6 - data in table</p>
+            <p>color7 - data in table</p>
+            <p>color8 - data in table</p>
+            <p>color9 - data in table</p>
+            <p>color10 - data in table</p>
+            <p>color11 - data in table</p>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <p> &#169 2022, Andrey Sebyakin.</p>
+    <a href="https://www.linkedin.com/in/andrey-sebyakin/" target="_blank">Contact</a>
+    <a href="mailto:andrey.sebyakin.by@gmail.com">Send email</a>
+</div>
+
+</body>
+</html>
